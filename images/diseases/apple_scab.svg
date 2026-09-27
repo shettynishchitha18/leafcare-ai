@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="appleLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="70%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <radialGradient id="scabLesion" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c2415"/>
+      <stop offset="45%" stop-color="#334226"/>
+      <stop offset="75%" stop-color="#556b2f"/>
+      <stop offset="100%" stop-color="#4CAF50" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#05240c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#f4faf5" rx="16"/>
+
+  <g filter="url(#shadow4)" transform="translate(20, 20)">
+    <!-- Stem -->
+    <path d="M180,340 Q170,220 180,30" stroke="#332418" stroke-width="7" fill="none" stroke-linecap="round"/>
+    
+    <!-- Apple Simple Oval Leaf with Serrations -->
+    <path d="M180,30 C250,60 275,130 265,220 C255,270 215,315 180,335 C145,315 105,270 95,220 C85,130 110,60 180,30 Z" 
+          fill="url(#appleLeafGrad)"/>
+
+    <!-- Veins -->
+    <path d="M180,270 Q225,230 250,210" stroke="#81c784" stroke-width="3" fill="none"/>
+    <path d="M180,270 Q135,230 110,210" stroke="#81c784" stroke-width="3" fill="none"/>
+    <path d="M180,200 Q235,160 255,140" stroke="#81c784" stroke-width="3" fill="none"/>
+    <path d="M180,200 Q125,160 105,140" stroke="#81c784" stroke-width="3" fill="none"/>
+    <path d="M180,120 Q225,85 245,65" stroke="#81c784" stroke-width="2.5" fill="none"/>
+    <path d="M180,120 Q135,85 115,65" stroke="#81c784" stroke-width="2.5" fill="none"/>
+
+    <!-- Apple Scab Olive-Velvety Lesions -->
+    <ellipse cx="140" cy="180" rx="35" ry="28" fill="url(#scabLesion)"/>
+    <ellipse cx="220" cy="140" rx="32" ry="25" fill="url(#scabLesion)"/>
+    <circle cx="170" cy="100" r="22" fill="url(#scabLesion)"/>
+    <circle cx="210" cy="230" r="25" fill="url(#scabLesion)"/>
+    <circle cx="130" cy="250" r="18" fill="url(#scabLesion)"/>
+
+    <!-- Puckered / distorted texture lines -->
+    <path d="M125,170 Q145,175 155,190" stroke="#1c2415" stroke-width="2.5" fill="none"/>
+    <path d="M205,130 Q225,138 235,150" stroke="#1c2415" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- Plant/Disease Badge -->
+  <rect x="20" y="345" width="360" height="38" rx="8" fill="#1b3820" opacity="0.92"/>
+  <text x="35" y="369" fill="#81c784" font-family="system-ui, sans-serif" font-size="13" font-weight="700">APPLE TREE</text>
+  <text x="365" y="369" fill="#aed581" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">APPLE SCAB</text>
+</svg>

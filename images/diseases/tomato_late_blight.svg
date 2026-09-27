@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tomLateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388E3C"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <radialGradient id="tomLateRot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1c17"/>
+      <stop offset="60%" stop-color="#2c3026"/>
+      <stop offset="85%" stop-color="#4e5445"/>
+      <stop offset="100%" stop-color="#388E3C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="220" fill="#f1f8e9" rx="12"/>
+  <g transform="translate(90, 20)">
+    <path d="M70,10 C120,40 130,100 120,140 C110,170 80,185 70,190 C60,185 30,170 20,140 C10,100 20,40 70,10 Z" fill="url(#tomLateGrad)"/>
+    <path d="M70,190 L70,15" stroke="#a5d6a7" stroke-width="3"/>
+    <!-- Water soaked large late blight blotches -->
+    <path d="M30,30 C60,20 100,50 80,90 C60,110 30,90 30,30 Z" fill="url(#tomLateRot)"/>
+    <ellipse cx="85" cy="130" rx="30" ry="25" fill="url(#tomLateRot)"/>
+    <!-- White mildew fluff -->
+    <ellipse cx="75" cy="85" rx="18" ry="8" fill="#ffffff" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grapeLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#43A047"/>
+      <stop offset="60%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <radialGradient id="ashPowder" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#eeeeee" stop-opacity="0.8"/>
+      <stop offset="80%" stop-color="#cccccc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#05240c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#f4faf5" rx="16"/>
+
+  <g filter="url(#shadow3)" transform="translate(20, 20)">
+    <!-- Stem -->
+    <path d="M180,335 C175,260 178,200 180,180" stroke="#4e342e" stroke-width="7" fill="none" stroke-linecap="round"/>
+    
+    <!-- Distinctive 3-5 Lobe Grape Leaf Shape -->
+    <path d="M180,180 
+             C160,195 120,210 90,200 C80,170 65,130 95,95 C120,110 135,100 145,75 C160,40 180,25 180,25 C180,25 200,40 215,75 C225,100 240,110 265,95 C295,130 280,170 270,200 C240,210 200,195 180,180 Z" 
+          fill="url(#grapeLeafGrad)"/>
+
+    <!-- Palmate veins radiating from petiole -->
+    <path d="M180,180 Q140,130 95,95" stroke="#81c784" stroke-width="3" fill="none"/>
+    <path d="M180,180 Q220,130 265,95" stroke="#81c784" stroke-width="3" fill="none"/>
+    <path d="M180,180 L180,25" stroke="#81c784" stroke-width="3.5" fill="none"/>
+    <path d="M180,180 Q130,190 90,200" stroke="#81c784" stroke-width="2.5" fill="none"/>
+    <path d="M180,180 Q230,190 270,200" stroke="#81c784" stroke-width="2.5" fill="none"/>
+
+    <!-- Powdery Mildew Dusty White Colonies -->
+    <circle cx="160" cy="110" r="38" fill="url(#ashPowder)"/>
+    <circle cx="215" cy="135" r="32" fill="url(#ashPowder)"/>
+    <circle cx="130" cy="165" r="28" fill="url(#ashPowder)"/>
+    <circle cx="180" cy="65" r="24" fill="url(#ashPowder)"/>
+    <circle cx="235" cy="85" r="22" fill="url(#ashPowder)"/>
+
+    <!-- Fine powdery speckles -->
+    <circle cx="155" cy="105" r="3" fill="#ffffff"/>
+    <circle cx="170" cy="120" r="2" fill="#f5f5f5"/>
+    <circle cx="210" cy="130" r="3" fill="#ffffff"/>
+    <circle cx="225" cy="145" r="2.5" fill="#f5f5f5"/>
+    <circle cx="125" cy="160" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- Plant/Disease Badge -->
+  <rect x="20" y="345" width="360" height="38" rx="8" fill="#1b3820" opacity="0.92"/>
+  <text x="35" y="369" fill="#81c784" font-family="system-ui, sans-serif" font-size="13" font-weight="700">GRAPE VINE</text>
+  <text x="365" y="369" fill="#e0e0e0" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">POWDERY MILDEW</text>
+</svg>

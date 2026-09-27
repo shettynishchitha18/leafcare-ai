@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wheatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5E1A5"/>
+      <stop offset="50%" stop-color="#81C784"/>
+      <stop offset="100%" stop-color="#388E3C"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" fill="#f1f8e9" rx="12"/>
+  <g transform="translate(110, 15)">
+    <!-- Wheat stem / sheath -->
+    <path d="M50,190 L50,15 C45,60 55,140 50,190" stroke="#7cb342" stroke-width="20" stroke-linecap="round"/>
+    <path d="M40,190 Q30,120 15,60" stroke="#8bc34a" stroke-width="7" fill="none"/>
+    <path d="M60,190 Q70,110 85,45" stroke="#8bc34a" stroke-width="7" fill="none"/>
+    <!-- Reddish-brown pustules -->
+    <ellipse cx="50" cy="50" rx="6" ry="14" fill="#b71c1c"/>
+    <ellipse cx="48" cy="85" rx="5" ry="18" fill="#d84315"/>
+    <ellipse cx="52" cy="125" rx="6" ry="16" fill="#bf360c"/>
+    <ellipse cx="48" cy="155" rx="5" ry="12" fill="#b71c1c"/>
+    <ellipse cx="72" cy="80" rx="3" ry="10" fill="#e64a19"/>
+    <ellipse cx="25" cy="100" rx="3" ry="9" fill="#e64a19"/>
+  </g>
+</svg>

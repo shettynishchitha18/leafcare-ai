@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="potatoLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388E3C"/>
+      <stop offset="60%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#0d3810"/>
+    </linearGradient>
+    <radialGradient id="waterSoaked" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#151b14"/>
+      <stop offset="40%" stop-color="#2c3829"/>
+      <stop offset="75%" stop-color="#4e5e49"/>
+      <stop offset="100%" stop-color="#1B5E20" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="whiteMold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#e0e0e0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#05240c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="400" height="400" fill="#f4faf5" rx="16"/>
+
+  <g filter="url(#shadow2)" transform="translate(20, 20)">
+    <!-- Stem -->
+    <path d="M180,340 Q170,200 180,30" stroke="#143b14" stroke-width="7" fill="none" stroke-linecap="round"/>
+    
+    <!-- Potato leaflet compound shape -->
+    <path d="M180,30 C250,50 280,130 270,210 C260,270 210,320 180,335 C150,320 100,270 90,210 C80,130 110,50 180,30 Z" 
+          fill="url(#potatoLeafGrad)"/>
+
+    <!-- Veins -->
+    <path d="M180,280 Q225,240 260,225" stroke="#66bb6a" stroke-width="3" fill="none"/>
+    <path d="M180,280 Q135,240 100,225" stroke="#66bb6a" stroke-width="3" fill="none"/>
+    <path d="M180,210 Q235,170 265,150" stroke="#66bb6a" stroke-width="3" fill="none"/>
+    <path d="M180,210 Q125,170 95,150" stroke="#66bb6a" stroke-width="3" fill="none"/>
+    <path d="M180,130 Q225,95 250,75" stroke="#66bb6a" stroke-width="2.5" fill="none"/>
+    <path d="M180,130 Q135,95 110,75" stroke="#66bb6a" stroke-width="2.5" fill="none"/>
+
+    <!-- Late Blight Water-soaked Dark Lesions -->
+    <path d="M120,40 C170,30 230,60 210,120 C190,160 140,140 120,110 Z" fill="#1d261b" opacity="0.92"/>
+    <path d="M220,160 C270,180 280,240 240,260 C200,250 210,200 220,160 Z" fill="#141c13" opacity="0.95"/>
+    <path d="M85,180 C110,170 140,200 130,240 C110,270 75,240 85,180 Z" fill="#1d241c" opacity="0.9"/>
+
+    <!-- White fungal mildew bloom rim -->
+    <ellipse cx="205" cy="115" rx="35" ry="18" fill="url(#whiteMold)"/>
+    <ellipse cx="235" cy="220" rx="30" ry="22" fill="url(#whiteMold)"/>
+    <ellipse cx="120" cy="215" rx="25" ry="15" fill="url(#whiteMold)"/>
+
+    <!-- Soft water-soaked edges -->
+    <circle cx="160" cy="85" r="45" fill="url(#waterSoaked)"/>
+    <circle cx="230" cy="210" r="40" fill="url(#waterSoaked)"/>
+  </g>
+
+  <!-- Plant/Disease Badge -->
+  <rect x="20" y="345" width="360" height="38" rx="8" fill="#1b3820" opacity="0.92"/>
+  <text x="35" y="369" fill="#81c784" font-family="system-ui, sans-serif" font-size="13" font-weight="700">POTATO PLANT</text>
+  <text x="365" y="369" fill="#ef5350" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">LATE BLIGHT (CRITICAL)</text>
+</svg>

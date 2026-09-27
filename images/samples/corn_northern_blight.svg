@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cornBladeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="40%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <radialGradient id="cigarLesion" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a3b2c"/>
+      <stop offset="60%" stop-color="#8d734a"/>
+      <stop offset="85%" stop-color="#c4af7b"/>
+      <stop offset="100%" stop-color="#4CAF50" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#05240c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#f4faf5" rx="16"/>
+
+  <g filter="url(#shadow5)" transform="translate(20, 20)">
+    <!-- Broad linear maize blade -->
+    <path d="M180,345 C130,280 110,180 120,30 C150,30 220,180 240,280 C250,320 220,340 180,345 Z" 
+          fill="url(#cornBladeGrad)"/>
+
+    <!-- Prominent central midrib -->
+    <line x1="175" y1="345" x2="155" y2="30" stroke="#a5d6a7" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Parallel longitudinal venation lines -->
+    <line x1="150" y1="340" x2="135" y2="40" stroke="#66bb6a" stroke-width="1.8"/>
+    <line x1="162" y1="342" x2="145" y2="35" stroke="#66bb6a" stroke-width="1.8"/>
+    <line x1="188" y1="342" x2="165" y2="35" stroke="#66bb6a" stroke-width="1.8"/>
+    <line x1="202" y1="340" x2="175" y2="40" stroke="#66bb6a" stroke-width="1.8"/>
+    <line x1="218" y1="320" x2="188" y2="50" stroke="#66bb6a" stroke-width="1.8"/>
+
+    <!-- Northern Leaf Blight Distinctive Cigar-Shaped Elliptical Lesions -->
+    <g transform="rotate(5, 150, 160)">
+      <ellipse cx="150" cy="160" rx="20" ry="75" fill="url(#cigarLesion)"/>
+      <ellipse cx="150" cy="160" rx="12" ry="60" fill="#3d2c1e" opacity="0.8"/>
+      <!-- Concentric dark fungal spore zone -->
+      <ellipse cx="150" cy="160" rx="6" ry="40" fill="#241a12"/>
+    </g>
+
+    <g transform="rotate(-4, 195, 230)">
+      <ellipse cx="195" cy="230" rx="16" ry="55" fill="url(#cigarLesion)"/>
+      <ellipse cx="195" cy="230" rx="10" ry="42" fill="#3d2c1e" opacity="0.8"/>
+    </g>
+
+    <!-- Secondary early lesion starting near top -->
+    <ellipse cx="140" cy="85" rx="8" ry="30" fill="url(#cigarLesion)"/>
+  </g>
+
+  <!-- Plant/Disease Badge -->
+  <rect x="20" y="345" width="360" height="38" rx="8" fill="#1b3820" opacity="0.92"/>
+  <text x="35" y="369" fill="#81c784" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CORN / MAIZE</text>
+  <text x="365" y="369" fill="#ffb74d" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">NORTHERN BLIGHT</text>
+</svg>

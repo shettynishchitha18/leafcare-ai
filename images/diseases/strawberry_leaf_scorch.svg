@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="strawLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#43A047"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" fill="#f9fbe7" rx="12"/>
+  <g transform="translate(80, 20)">
+    <!-- 3-part strawberry leaflet -->
+    <path d="M80,20 C120,40 130,90 120,130 C100,165 80,180 80,180 C80,180 60,165 40,130 C30,90 40,40 80,20 Z" fill="url(#strawLeaf)"/>
+    <!-- Scorch purplish lesions -->
+    <circle cx="65" cy="70" r="10" fill="#4a148c" opacity="0.85"/>
+    <circle cx="95" cy="95" r="13" fill="#311b92" opacity="0.85"/>
+    <circle cx="60" cy="120" r="8" fill="#4a148c" opacity="0.85"/>
+    <circle cx="85" cy="140" r="11" fill="#311b92" opacity="0.85"/>
+    <path d="M35,100 Q45,120 40,140 Q30,130 35,100 Z" fill="#6a1b9a"/>
+    <path d="M120,80 Q130,110 120,130 Q110,110 120,80 Z" fill="#6a1b9a"/>
+  </g>
+</svg>

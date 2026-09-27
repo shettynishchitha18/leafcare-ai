@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="healthyLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="50%" stop-color="#388E3C"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow6" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="6" stdDeviation="6" flood-color="#05240c" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#f4faf5" rx="16"/>
+
+  <g filter="url(#shadow6)" transform="translate(20, 20)">
+    <!-- Stem -->
+    <path d="M180,340 Q175,220 180,30" stroke="#1b5e20" stroke-width="7" fill="none" stroke-linecap="round"/>
+    
+    <!-- Robust, pristine, vibrant leaf blade -->
+    <path d="M180,30 C235,60 285,100 275,160 C270,190 290,210 280,250 C270,290 220,310 180,330 C140,310 90,290 80,250 C70,210 90,190 85,160 C75,100 125,60 180,30 Z" 
+          fill="url(#healthyLeafGrad)"/>
+
+    <!-- Natural healthy chlorophyll sheen -->
+    <path d="M180,35 C220,65 240,110 225,180 C210,240 180,290 180,320 C175,250 170,180 180,35 Z" 
+          fill="url(#sheen)"/>
+
+    <!-- Pristine, sharp venation network -->
+    <path d="M180,290 Q225,260 260,250" stroke="#a5d6a7" stroke-width="3" fill="none"/>
+    <path d="M180,290 Q135,260 100,250" stroke="#a5d6a7" stroke-width="3" fill="none"/>
+    <path d="M180,220 Q235,190 270,175" stroke="#a5d6a7" stroke-width="3.5" fill="none"/>
+    <path d="M180,220 Q125,190 90,175" stroke="#a5d6a7" stroke-width="3.5" fill="none"/>
+    <path d="M180,140 Q230,120 260,100" stroke="#a5d6a7" stroke-width="3" fill="none"/>
+    <path d="M180,140 Q130,120 100,100" stroke="#a5d6a7" stroke-width="3" fill="none"/>
+    <path d="M180,80 Q215,65 240,50" stroke="#a5d6a7" stroke-width="2" fill="none"/>
+    <path d="M180,80 Q145,65 120,50" stroke="#a5d6a7" stroke-width="2" fill="none"/>
+
+    <!-- Green checkmark badge floating over pristine leaf -->
+    <circle cx="270" cy="80" r="28" fill="#43a047" stroke="#ffffff" stroke-width="3"/>
+    <path d="M258,80 L266,88 L284,70" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Plant/Disease Badge -->
+  <rect x="20" y="345" width="360" height="38" rx="8" fill="#1b3820" opacity="0.92"/>
+  <text x="35" y="369" fill="#81c784" font-family="system-ui, sans-serif" font-size="13" font-weight="700">BELL PEPPER / TOMATO</text>
+  <text x="365" y="369" fill="#4caf50" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="end">HEALTHY (100% CLEAR)</text>
+</svg>
