@@ -115,7 +115,7 @@ http://localhost/LeafCare-AI
 If you want to run the project immediately without configuring Apache:
 1. Open PowerShell or Command Prompt in the project folder:
    ```powershell
-   cd "C:\Users\NITHESH SHETTY\.gemini\antigravity\scratch\LeafCare-AI"
+   cd "path\to\LeafCare-AI"
    ```
 2. Launch the PHP development server:
    ```powershell
